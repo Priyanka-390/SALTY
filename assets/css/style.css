@@ -189,10 +189,6 @@
     line-height: 20px;
 }
 
-body {
-    background-color: #FAF8ED !important;
-}
-
 ul {
     margin-bottom: 0 !important;
     padding-left: 0 !important;
@@ -296,18 +292,18 @@ p {
     padding: 12px;
 }
 
-.circle1 {
+.circle2 {
     width: 54px;
     height: 54px;
     border-radius: 50%;
     border: 1px solid black;
 }
 
-.circle1:hover {
+.circle2:hover {
     background: black;
 }
 
-.circle1:hover svg path {
+.circle2:hover svg path {
     stroke: white;
 }
 
@@ -393,7 +389,8 @@ p {
     padding: 0 20% 0 0;
     position: relative;
 }
-.card-slider .over-slider{
+
+.card-slider .over-slider {
     z-index: 2;
 }
 
@@ -403,27 +400,202 @@ p {
     top: 0px;
     bottom: 0px;
     width: 4000px !important;
-    height: 110%;
+    height: 100%;
     right: 100%;
     background-color: #FAF8ED;
 }
-.visite div p {
-    opacity: 0 !important;
+
+.long-card {
+    height: 358px;
+    border-radius: 30px;
+    background: #FFD482;
+    padding: 75px 75px;
 }
 
-.visite:hover div p {
-    opacity: 1 !important;
-    transition: 300ms;
+.pb-40 {
+    padding-bottom: 40px;
 }
 
-.blur:hover img {
-    opacity: 0.8;
-    transition: 300ms;
+.pl-12 {
+    padding-left: 12px;
 }
 
-.visit {
-    top: 38%;
-    left: 38%;
+.mw-415 {
+    max-width: 415px;
+}
+
+.mw-141 {
+    max-width: 141px;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.py-66 {
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+.border-none {
+    border: none;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.mail-form {
+    max-width: 450px;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.border-radius {
+    border-radius: 12px;
+}
+
+.cards {
+    border-radius: 14px;
+    background: #FFF;
+    padding: 30px 30px;
+}
+
+body {
+    background: #faf8ed !important;
+}
+
+.common-btn {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #3D3D3D;
+}
+
+.common-btn:hover {
+    background: black;
+    color: #FFF !important;
+}
+
+.d-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.gap-14 {
+    gap: 14px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.mw-467 {
+    max-width: 467px;
+}
+
+.pb-27 {
+    padding-bottom: 27px;
+}
+
+.pt-27 {
+    padding-top: 27px;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.py-75 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.circle {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px 10px;
+}
+
+.circle:hover {
+    border: 2px solid orangered;
+}
+
+.circle:hover svg path {
+    fill: orangered;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.image-scale:hover {
+    transform: scale(1.1);
+    transition: all 300ms linear;
+}
+
+
+.pt-84 {
+    padding-top: 84px;
+}
+
+.pb-12 {
+    padding-bottom: 12px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.grid_item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid_item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.grid_item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.grid_item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.grid_item5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.grid_item6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.bg-img {
+    background-image: url(../images/png/group.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 @media (max-width:575.98px) {
@@ -464,7 +636,7 @@ p {
         right: -100%;
         width: 100%;
         min-height: 100vh;
-        background-color: lightcyan;
+        background-color: #faf8ed;
         transition: 300ms linear;
         flex-direction: column;
         z-index: 1;
@@ -499,6 +671,45 @@ p {
     .text-align-lg-center {
         text-align: center;
     }
+}
+
+@media (min-width:768px) {
+    .grid_item1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .grid_item2 {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+
+    .grid_item3 {
+        grid-column: 4/6;
+        grid-row: 1/2;
+    }
+
+    .grid_item4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .grid_item5 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .grid_item6 {
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width:900px) {
+    .cards {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (min-width:992px) {
