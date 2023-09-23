@@ -8,11 +8,385 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="shortcut icon" href="./assets/images/png/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/png/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
- 
+    <header class="min-vh-100 d-flex flex-column">
+        <!-- navbar start here -->
+        <nav class="py-40">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/images/png/logo.png" alt="logo">
+                        <a href=""
+                            class="col-black1 ff-sen fs-20 fw-700 lh-100 fst-normal text-decoration-none list-unstyled pl-6">Salty</a>
+                        <ul class="d-flex gap-36 ml-72 justify-content-center align-items-center  mobile_view"
+                            id="navbar">
+                            <li><a class="list-unstyled text-decoration-none col-black1 nav-text ff-poppins fs-16 fw-400 lh-100 nav-line position-relative"
+                                    href="">Home</a></li>
+                            <li><a class="list-unstyled text-decoration-none col-black1 nav-text ff-poppins fs-16 fw-400 lh-100 nav-line position-relative"
+                                    href="">About us</a></li>
+                            <li><a class="list-unstyled text-decoration-none col-black1 nav-text ff-poppins fs-16 fw-400 lh-100 nav-line position-relative"
+                                    href="">Destinations</a></li>
+                            <li><a class="list-unstyled text-decoration-none col-black1 nav-text ff-poppins fs-16 fw-400 lh-100 nav-line position-relative"
+                                    href="">Tours</a></li>
+                            <li><a class="list-unstyled text-decoration-none col-black1 nav-text ff-poppins fs-16 fw-400 lh-100 nav-line position-relative"
+                                    href="">Blog</a></li>
+                            <li><button class="nav-btn col-orange ff-poppins d-block d-lg-none fs-16 fw-500 lh-100">Book
+                                    Now <span class="pl-6"><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z"
+                                                fill="#F66F4D" />
+                                        </svg>
+                                    </span></button></li>
+                        </ul>
+                    </div>
+                    <button class="nav-btn col-orange ff-poppins fs-16 fw-500 d-none d-lg-block lh-100">Book Now <span
+                            class="pl-6"><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z"
+                                    fill="#F66F4D" />
+                            </svg>
+                        </span></button>
+                    <div id="menubtn-icon" onclick="openNav()" class="d-xl-none z-3 pe-2 pt-2">
+                        <div class="line2"></div>
+                        <div class="line3 my-2"></div>
+                        <div class="line4"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section start here -->
+        <section class="d-flex flex-grow-1 align-items-center">
+            <div class="container">
+                <div class="row d-flex align-items-center pb-0 pt-2 py-sm-3">
+                    <div class="col-lg-7 col-12">
+                        <h1 class="col-black2 ff-sen fs-84 fw-700 lh-102 mw-xl-577 text-align-lg-center">Discover the
+                            Best Lovely Places</h1>
+                        <p class="main-para pt-sm-4 pt-2 mw-xl-500 fs-18 text-align-lg-center">Plan and book your
+                            perfect trip
+                            with expert advice,
+                            travel tips,
+                            destination information and inspiration from us.</p>
+                        <div class="white-box mt-sm-5 mt-4 mw-xl-500">
+                            <div class="row line1 d-flex align-items-center justify-content-center">
+                                <div
+                                    class="col-lg-5 col-md-6 d-flex justify-content-center flex-column  align-items-center align-items-lg-start pt-2">
+                                    <p class="col-black2 ff-inter fs-18 fw-500 lh-94">Where</p>
+                                    <div class="d-flex">
+                                        <p class="col-black3 ff-inter fs-12 fw-400 lh-100 pt-2">Center Point, Lo...</p>
+                                        <span class="pl-26"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="9"
+                                                    height="13" viewBox="0 0 9 13" fill="none">
+                                                    <path
+                                                        d="M9 4.55C9 3.95249 8.8836 3.36082 8.65746 2.80879C8.43131 2.25676 8.09984 1.75517 7.68198 1.33266C7.26412 0.910158 6.76804 0.575007 6.22208 0.346348C5.67611 0.117689 5.09095 0 4.5 0C3.90905 0 3.32389 0.117689 2.77792 0.346348C2.23196 0.575007 1.73588 0.910158 1.31802 1.33266C0.900156 1.75517 0.568688 2.25676 0.342542 2.80879C0.116396 3.36082 -8.80582e-09 3.95249 0 4.55C0 5.45155 0.263571 6.29005 0.710357 6.99725H0.705214C2.22236 9.399 4.5 13 4.5 13L8.29479 6.99725H8.29029C8.75341 6.26689 8.99971 5.41758 9 4.55ZM4.5 6.5C3.98851 6.5 3.49797 6.29455 3.13629 5.92886C2.77462 5.56316 2.57143 5.06717 2.57143 4.55C2.57143 4.03283 2.77462 3.53684 3.13629 3.17114C3.49797 2.80545 3.98851 2.6 4.5 2.6C5.01149 2.6 5.50203 2.80545 5.86371 3.17114C6.22538 3.53684 6.42857 4.03283 6.42857 4.55C6.42857 5.06717 6.22538 5.56316 5.86371 5.92886C5.50203 6.29455 5.01149 6.5 4.5 6.5Z"
+                                                        fill="#F66F4D" />
+                                                </svg></a></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-5 col-md-6 d-flex justify-content-center flex-column  align-items-center align-items-lg-start pt-2">
+                                    <p class="col-black2 ff-inter fs-18 fw-500 lh-94">Where</p>
+                                    <div class="d-flex">
+                                        <p class="col-black3 ff-inter fs-12 fw-400 lh-100 pt-2">Center Point, Lo...</p>
+                                        <span class="pl-26"><a href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                                    <path
+                                                        d="M5.23656 5.16263V9.49649H4.68812V5.75088H4.67838C4.44356 5.87843 3.96094 6.17339 3.65625 6.38217V5.81748C3.9979 5.57766 4.3539 5.35896 4.72225 5.16263H5.23656Z"
+                                                        fill="#F66F4D" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.5855 9.57856C6.68444 9.57856 6.24 8.9562 6.20182 8.43618H6.75756C6.79169 8.7368 7.07119 9.10244 7.61068 9.10244C8.29644 9.10244 8.66775 8.41342 8.671 7.34419H8.64907C8.52475 7.68056 8.1315 7.98605 7.52538 7.98605C6.83313 7.98605 6.16362 7.49043 6.16362 6.54795C6.16362 5.62412 6.87131 5.07812 7.62369 5.07812C8.57594 5.07812 9.2105 5.67451 9.2105 7.2459C9.2105 8.71246 8.60763 9.57856 7.5855 9.57856ZM7.63913 7.51235C8.14694 7.51235 8.60112 7.11914 8.60112 6.55361C8.60112 5.87763 8.17294 5.55425 7.65863 5.55425C7.1825 5.55425 6.70963 5.86871 6.70963 6.53739C6.70963 7.20117 7.15081 7.51235 7.63913 7.51235Z"
+                                                        fill="#F66F4D" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.13101 0.118969C3.05483 0.0427971 2.95149 0 2.84375 0C2.73601 0 2.63267 0.0427971 2.55649 0.118969C2.4803 0.19519 2.4375 0.298489 2.4375 0.40625V0.8125H1.625C1.19402 0.8125 0.7807 0.983688 0.47595 1.28848C0.171207 1.59321 0 2.0065 0 2.4375V11.375C0 11.806 0.171207 12.2193 0.47595 12.524C0.7807 12.8288 1.19402 13 1.625 13H11.375C11.806 13 12.2193 12.8288 12.524 12.524C12.8288 12.2193 13 11.806 13 11.375V2.4375C13 2.0065 12.8288 1.59321 12.524 1.28848C12.2193 0.983688 11.806 0.8125 11.375 0.8125H10.5625V0.40625C10.5625 0.298489 10.5197 0.19519 10.4435 0.118969C10.3673 0.0427971 10.264 0 10.1562 0C10.0485 0 9.94517 0.0427971 9.86899 0.118969C9.7928 0.19519 9.75 0.298489 9.75 0.40625V0.8125H3.25V0.40625C3.25 0.298489 3.2072 0.19519 3.13101 0.118969ZM0.8125 11.375V3.25H12.1875V11.375C12.1875 11.5905 12.1019 11.7972 11.9495 11.9495C11.7971 12.1019 11.5905 12.1875 11.375 12.1875H1.625C1.40951 12.1875 1.20285 12.1019 1.05048 11.9495C0.8981 11.7972 0.8125 11.5905 0.8125 11.375Z"
+                                                        fill="#F66F4D" />
+                                                </svg></a></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-2 col-12 d-flex justify-content-lg-end justify-content-center align-items-center pt-2">
+                                    <img src="./assets/images/svg/search-icon.png" alt="search-icon"
+                                        class="cursor-pointer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 d-flex justify-content-center align-items-center pt-4 pt-lg-0">
+                        <img src="./assets/images/png/group-img.png" alt="group-img" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- sec-2 -->
+    <section class="py-5 mt-lg-5">
+        <div class="container">
+            <div class="d-flex justify-content-center justify-content-sm-between">
+                <div>
+                    <p class="main-heading  text-align-md-center mb-0">Categories</p>
+                    <p class="main-para  pt-2 pt-md-4 mw-370 fs-16 text-align-md-center">Here are lots of interesting
+                        destinations to visit, but don’t
+                        be
+                        confused—they’re already grouped by category.</p>
+                </div>
+                <div class="d-none d-sm-flex">
+                    <div class="circle1 d-flex justify-content-center align-items-center previous">
+                        <span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="circle1 d-flex justify-content-center align-items-center ml-16 nexts">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
+                                fill="none">
+                                <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider pt-4 pt-sm-5">
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/beach.png" alt="beach" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Beach</p>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/desert.png" alt="desert" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Desert</p>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/mountain.png" alt="mountain" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Mountain</p>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/temple.png" alt="temple" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Temple</p>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/tower.png" alt="tower" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Tower</p>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/pyramid.png" alt="pyramid" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Pyramid</p>
+                </div>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="./assets/images/png/beach.png" alt="beach" class="w-100 px-2">
+                    <p class="col-black2 fs-26 ff-inter fw-500 lh-100 pt-3">Beach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--sec-3-->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row pt-5 d-flex align-items-center ">
+                <div class="col-lg-6 col-12">
+                    <img src="./assets/images/png/group-img2.png" alt="group-img2" class="w-100">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <p class="col-orange ff-inter fs-20 fw-600 lh-100 text-align-lg-center">Our Experience</p>
+                    <p class="main-heading pt-3 text-align-lg-center mw_lg_467">Our Stories Have Adventures</p>
+                    <p class="main-para fs-16 pt-2 pt-md-3 text-align-lg-center ">We are experienced in bringing
+                        adventures to
+                        stay their<br class="d-none d-md-block">journey,
+                        with all outdoor destinations in
+                        the world as our
+                        <br class="d-none d-md-block">specialties. Start your adventure now! Nature has already <br
+                            class="d-none d-md-block">called you!
+                    </p>
+                    <div class="row pt-4 pt-md-5 pb-5">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card1 d-flex align-items-center flex-column">
+                                <p class="col-orange ff-inter fs-46 fw-600 lh-100">12K+</p>
+                                <p class="col-black4 ff-inter fs-21 fw-400 lh-138 pt-3">Succes<br> Journey</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 pt-2 pt-md-0">
+                            <div class="card1 d-flex align-items-center flex-column">
+                                <p class="col-orange ff-inter fs-46 fw-600 lh-100">12K+</p>
+                                <p class="col-black4 ff-inter fs-21 fw-400 lh-138 pt-3">Succes<br> Journey</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 pt-2 pt-lg-0">
+                            <div class="card1 d-flex align-items-center flex-column">
+                                <p class="col-orange ff-inter fs-46 fw-600 lh-100">12K+</p>
+                                <p class="col-black4 ff-inter fs-21 fw-400 lh-138 pt-3">Succes<br> Journey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-5 overflow-hidden">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p class="main-heading ">Find Popular<br>Destination</p>
+                </div>
+                <div class=" d-flex">
+                    <div class="circle1 d-flex justify-content-center align-items-center prev">
+                        <span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="circle1 d-flex justify-content-center align-items-center ml-16 next">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
+                                fill="none">
+                                <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="card2 mt-35 mx-3">
+                    <img src="./assets/images/png/img-1.png" alt="img-1" class="radius-16 w-100">
+                    <p class="col-black2 ff-inter fs-24 fw-600 lh-100 pt-24 pl-6">Mountain Hiking Tour</p>
+                    <p class="col-grey ff-inter fs-14 fw-400 lh-100 pt-3 pl-6">Mountain Hiking Tour</p>
+                    <div class="d-flex justify-content-between pl-6 pt-35">
+                        <p class="col-black2 ff-inter fs-24 fw-600 lh-83">$89 <span
+                                class="col-grey fs-16 fw-400 lh-83">/Person</span></p>
+                        <button class="col-black2 ff-inter fs-14 fw-400 lh-100 now-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card2 mt-35 mx-3">
+                    <img src="./assets/images/png/img-2.png" alt="img-2" class="radius-16 w-100">
+                    <p class="col-black2 ff-inter fs-24 fw-600 lh-100 pt-24 pl-6">Mountain Hiking Tour</p>
+                    <p class="col-grey ff-inter fs-14 fw-400 lh-100 pt-3 pl-6">Mountain Hiking Tour</p>
+                    <div class="d-flex justify-content-between pt-35 pl-6">
+                        <p class="col-black2 ff-inter fs-24 fw-600 lh-83">$89 <span
+                                class="col-grey fs-16 fw-400 lh-83">/Person</span>
+                        </p>
+                        <button class="col-black2 ff-inter fs-14 fw-400 lh-100 now-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card2 mt-35 mx-3">
+                    <img src="./assets/images/png/img-3.png" alt="img-3" class="radius-16 w-100">
+                    <p class="col-black2 ff-inter fs-24 fw-600 lh-100 pt-24 pl-6">Mountain Hiking Tour</p>
+                    <p class="col-grey ff-inter fs-14 fw-400 lh-100 pt-3 pl-6">Mountain Hiking Tour</p>
+                    <div class="d-flex justify-content-between pt-35 pl-6">
+                        <p class="col-black2 ff-inter fs-24 fw-600 lh-83">$89 <span
+                                class="col-grey fs-16 fw-400 lh-83">/Person</span>
+                        </p>
+                        <button class="col-black2 ff-inter fs-14 fw-400 lh-100 now-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card2 mt-35 mx-3">
+                    <img src="./assets/images/png/img-3.png" alt="img-3" class="radius-16 w-100">
+                    <p class="col-black2 ff-inter fs-24 fw-600 lh-100 pt-24 pl-6">Mountain Hiking Tour</p>
+                    <p class="col-grey ff-inter fs-14 fw-400 lh-100 pt-3 pl-6">Mountain Hiking Tour</p>
+                    <div class="d-flex justify-content-between pt-35 pl-6">
+                        <p class="col-black2 ff-inter fs-24 fw-600 lh-83">$89 <span
+                                class="col-grey fs-16 fw-400 lh-83">/Person</span>
+                        </p>
+                        <button class="col-black2 ff-inter fs-14 fw-400 lh-100 now-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="card2 mt-35 mx-3">
+                    <img src="./assets/images/png/img-2.png" alt="img-2" class="radius-16 w-100">
+                    <p class="col-black2 ff-inter fs-24 fw-600 lh-100 pt-24">Mountain Hiking Tour</p>
+                    <p class="col-grey ff-inter fs-14 fw-400 lh-100 pt-3">Mountain Hiking Tour</p>
+                    <div class="d-flex justify-content-between pt-35">
+                        <p class="col-black2 ff-inter fs-24 fw-600 lh-83">$89 <span
+                                class="col-grey fs-16 fw-400 lh-83">/Person</span>
+                        </p>
+                        <button class="col-black2 ff-inter fs-14 fw-400 lh-100 now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            prevArrow: ".previous",
+            nextArrow: ".nexts",
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: false,
+                        nextArrow: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        $('.card-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            prevArrow: ".prev",
+            nextArrow: ".next",
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+
+                    }
+                }
+            ]
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
